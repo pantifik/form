@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="scripts/js/bootstrap.js"></script>
+    <script src="scripts/js/table.js"></script>
+
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="form container">
+        <form action="">
+            
+            <div class="buyer form-horizontal panel panel-primary">
+                
+                <header class="panel-heading">Покупатель</header>
+                
+                <section>
+                    <div class="">
+                    <label for="surname" class="col-sm-2 control-label">Фамилия</label>
+                    <input type="text" name="surname" class="form-control" placeholder="Фамилия">
+                    </div>
+
+                    <div class="">
+                        <label for="name"  class="col-sm-2 control-label">Имя</label>
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                    </div>
+
+                    <div class="">
+                        <label for="patronymic"  class="col-sm-2 control-label">Отчество</label>
+                        <input type="text" name="patronymic" class="form-control" placeholder="Отчество">
+                    </div>
+
+                    <div class="">
+                        <label for="tel"  class="col-sm-2 control-label">Номер телефона</label>
+                        <input type="tel" name="tel" class="form-control" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}" title="херня" placeholder="+7 123 456 7890">
+                    </div>
+                </section>
+
+            </div>
+
+
+            <div class="car form-horizontal panel panel-primary">
+
+                <header class="panel-heading">Автомобиль</header>
+                
+                <div class="">
+                    <label for="model" class="col-sm-2 control-label">Марка автомобиля</label>
+                    <input type="text" name="model" class="form-control" placeholder="Ford Focus">
+                </div>
+                <div class="">
+                    <label for="vin" class="col-sm-2 control-label">VIN-номер</label>
+                    <input type="text" name="vin" class="form-control" placeholder="JN1WNYD21U0000001">
+                </div>
+                <div class="">
+                    <label for="product-year" class="col-sm-2 control-label">Год выпуска</label>
+                    <input type="text" name="product-year" class="form-control" placeholder="2000">
+                </div>
+                <div class="">
+                    <label for="comment" class="col-sm-2 control-label">Комментарий</label>
+                    <textarea name="comment" class="form-control" rows="3"></textarea>
+                </div>
+
+            </div>
+
+            <div class="order panel panel-primary">
+                <header class="panel-heading">Заказ</header>
+                <table id="order-table" class="table table-bordered"> 
+                    <tr>
+                        <th></th>
+                        <th>Наименование</th>
+                        <th>Номер по каталогу</th>
+                        <th>Дата поставки</th>
+                        <th>Стоимость</th>
+                    </tr>
+                    <tr>
+                        <td class="row-number">1</td>
+                        <td class="name">name</td>
+                        <td class="catalogue-number">catalogue-number</td>
+                        <td class="delivery">delivery</td>
+                        <td class="price">price</td>
+                    </tr>
+                </table>
+                <p class="sum"><b>Сумма:</b> <b class="sum-value">0</b></p>
+
+                <button type="button" class="add-row glyphicon glyphicon-plus"></button>
+                
+                
+                <p>Оплата<br>
+                    <input type="radio" name="payment" value="credit">Кредит<br>
+                    <input type="radio" name="payment" value="paid" checked>Оплачено<br>
+                </p>
+            </div>
+
+            <button class="save-button" type="button" >Записать</button>
+            <button class="execute-button" type="submit">Оформить</button>
+
+        </form>
+
+
+    </div>
+
+    <div class="list">
+        
+    </div>
+    
+</body>
+</html>
