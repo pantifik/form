@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
     function Table(tableId){
+        
         this.id = tableId;
     };
 
